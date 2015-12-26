@@ -39,7 +39,7 @@ public class FfmpegController {
 	
 	public FfmpegController(Context context, File fileTemp) throws FileNotFoundException, IOException {		
 		mFileTemp = fileTemp;
-		
+		webView.loadUrl("javascript:console.log('FFMPEG: installing binaries');");
 		installBinaries(context, false);
 	}
 	
